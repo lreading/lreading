@@ -1,38 +1,48 @@
-# If found, please return to terminal
+<div align="center">
+  <h1>If found, please return to terminal</h1>
+</div>
 
 <p align="center">
-  <img src="./assets/overengineering-dashboard.svg" alt="Animated tmux terminal dashboard tracking over-engineered solutions to mundane problems" width="100%" />
+  <img
+    src="./assets/overengineering-dashboard.svg"
+    alt="Animated terminal dashboard tracking over-engineered solutions to mundane problems"
+    width="100%"
+  />
 </p>
 
+<h1 align="center">Hi, I'm Leo.</h1>
+
+<table align="center">
+  <tr>
+    <td align="center" width="720px">
+
+I build security programs, developer tooling, weird automation, open source software, and increasingly elaborate systems designed to catch Santa. I'm deeply suspicious of manual processes, and mildly obsessed with elegant systems.
+
+  </td>
+  </tr>
+</table>
+
 <div align="center">
-<h1>Hi,</h1>
-
-<h3>I'm Leo.</h3>
-
-I like building things: security programs, developer tooling, weird automation, open source software, and increasingly elaborate systems designed to catch Santa.
-
+  <h3>
+    <em>
+      I'm perpetually one bad idea away from over-engineering something useful.
+    </em>
+  </h3>
 </div>
 
-<div align="center">
+---
 
-I’m deeply suspicious of manual processes, mildly obsessed with elegant systems, and ***one bad idea away from over-engineering something useful***.
+### What I'm Currently Building
 
-</div>
+- [OWASP Threat Dragon](https://github.com/OWASP/threat-dragon) - open source threat modeling, and yes, objectively the cutest mascot in security
+- [slide-spec](https://github.com/lreading/slide-spec) - presentations as structured data, built as and for OSS communities
+- [garak-repo](https://github.com/lreading/garak-repo) - visualizing, storing, and comparing [Nvidia garak](https://github.com/nvidia/garak) runs
+- [ts-express-framework](https://github.com/lreading/ts-express-framework) 0 because apparently I _needed_ my own TypeScript framework? 🤡
+- [Santa Detection Control Center](https://github.com/lreading/santa-detection-control-center) - highly classified seasonal surveillance infrastructure. **SERIOUSLY, DO NOT LOOK HERE**.
 
+### Reasons You Might Not Like Me
 
-
-## What I'm Currently Building
-
-- [OWASP Threat Dragon](https://github.com/OWASP/threat-dragon) — open source threat modeling, and yes, objectively the cutest mascot in security
-- [slide-spec](https://github.com/lreading/slide-spec) — presentations as structured data, built as and for OSS communities
-- [garak-repo](https://github.com/lreading/garak-repo) — visualizing, storing, and comparing [Nvidia garak](https://github.com/nvidia/garak) runs
-- [ts-express-framework](https://github.com/lreading/ts-express-framework) — because apparently I _needed_ my own TypeScript framework? 🤡
-- [Santa Detection Control Center](https://github.com/lreading/santa-detection-control-center) — highly classified seasonal surveillance infrastructure. SERIOUSLY, DO NOT LOOK HERE.
-
-
-## Reasons You Might Not Like Me
-
-_These are things I believe at the time of writing.  They are strong opinions, but hopefully not strongly held._
+_Things I believe at the time of writing. Strong opinions, hopefully not strongly held._
 
 - Most manual processes are bugs with social acceptance
 - Over-engineering is fine if you're having fun and nobody gets hurt
