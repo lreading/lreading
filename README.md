@@ -12,15 +12,12 @@
 
 <h1 align="center">Hi, I'm Leo.</h1>
 
-<table align="center">
-  <tr>
-    <td align="center" width="720px">
-
-I build security programs, developer tooling, weird automation, open source software, and increasingly elaborate systems designed to catch Santa. I'm deeply suspicious of manual processes, and mildly obsessed with elegant systems.
-
-  </td>
-  </tr>
-</table>
+<p align="center">
+  I build security programs, developer tooling, weird automation, <br />
+  open source software, and increasingly elaborate systems designed to <br />
+  catch Santa. I'm deeply suspicious of manual processes, and mildly <br />
+  obsessed with elegant systems.
+</p>
 
 <div align="center">
   <h3>
