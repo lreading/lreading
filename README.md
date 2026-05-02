@@ -1,15 +1,27 @@
 # If found, please return to terminal
 
-### Hi
+<p align="center">
+  <img src="./assets/overengineering-dashboard.svg" alt="Animated tmux terminal dashboard tracking over-engineered solutions to mundane problems" width="100%" />
+</p>
 
-#### I'm Leo.
+<div align="center">
+<h1>Hi,</h1>
+
+<h3>I'm Leo.</h3>
 
 I like building things: security programs, developer tooling, weird automation, open source software, and increasingly elaborate systems designed to catch Santa.
 
+</div>
+
+<div align="center">
+
 I’m deeply suspicious of manual processes, mildly obsessed with elegant systems, and ***one bad idea away from over-engineering something useful***.
 
+</div>
 
-## What I'm Building
+
+
+## What I'm Currently Building
 
 - [OWASP Threat Dragon](https://github.com/OWASP/threat-dragon) — open source threat modeling, and yes, objectively the cutest mascot in security
 - [slide-spec](https://github.com/lreading/slide-spec) — presentations as structured data, built as and for OSS communities

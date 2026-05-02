@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Hollywood hacker terminal dashboard monitoring over-engineering</title>
+  <desc id="desc">A dark tmux-style terminal dashboard with scrolling alert logs, a live over-engineering graph, and an encrypted terminal todo list.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020403"/>
+      <stop offset="0.55" stop-color="#06120e"/>
+      <stop offset="1" stop-color="#0a0714"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07120f"/>
+      <stop offset="1" stop-color="#010403"/>
+    </linearGradient>
+    <filter id="greenGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="redGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="leftLogClip">
+      <rect x="44" y="96" width="472" height="244" rx="2"/>
+    </clipPath>
+    <clipPath id="graphClip">
+      <rect x="562" y="124" width="344" height="68"/>
+    </clipPath>
+    <clipPath id="todoClip">
+      <rect x="562" y="252" width="344" height="108"/>
+    </clipPath>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#9cffbd" opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="420" fill="url(#bg)"/>
+  <rect width="960" height="420" fill="url(#scanlines)"/>
+
+  <g opacity="0.26">
+    <circle cx="90" cy="64" r="80" fill="#0efc88" opacity="0.12"/>
+    <circle cx="840" cy="356" r="120" fill="#ff2bd6" opacity="0.09"/>
+    <path d="M0 366 H960" stroke="#0efc88" opacity="0.28"/>
+    <path d="M0 388 H960" stroke="#15c7ff" opacity="0.16"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+    <rect x="18" y="20" width="924" height="378" rx="10" fill="#020604" stroke="#17472e" stroke-width="2"/>
+    <rect x="19" y="21" width="922" height="376" rx="9" fill="url(#terminal)" opacity="0.95"/>
+    <rect x="19" y="21" width="922" height="30" rx="9" fill="#09120f"/>
+    <rect x="19" y="42" width="922" height="9" fill="#09120f"/>
+
+    <circle cx="39" cy="36" r="5" fill="#ff5f57"/>
+    <circle cx="58" cy="36" r="5" fill="#ffbd2e"/>
+    <circle cx="77" cy="36" r="5" fill="#28c840"/>
+    <text x="104" y="40" fill="#8cfcb3" font-size="13">leo@arch-over-zfs: ~/bad-ideas</text>
+    <text x="820" y="40" fill="#506b5c" font-size="12">tmux: 3 panes</text>
+
+    <rect x="31" y="62" width="498" height="306" fill="#020705" stroke="#1f6d42"/>
+    <rect x="541" y="62" width="388" height="148" fill="#020705" stroke="#1f6d42"/>
+    <rect x="541" y="220" width="388" height="148" fill="#020705" stroke="#1f6d42"/>
+
+    <rect x="31" y="62" width="498" height="24" fill="#062015"/>
+    <rect x="541" y="62" width="388" height="24" fill="#062015"/>
+    <rect x="541" y="220" width="388" height="24" fill="#062015"/>
+    <rect x="529" y="62" width="12" height="306" fill="#07110d"/>
+    <rect x="541" y="210" width="388" height="10" fill="#07110d"/>
+
+    <text x="43" y="79" fill="#c8ffd8" font-size="12">0: alerts</text>
+    <text x="268" y="79" fill="#567362" font-size="12">tail -f /var/log/leoctl/events.log</text>
+    <text x="553" y="79" fill="#c8ffd8" font-size="12">1: leoctl</text>
+    <text x="750" y="79" fill="#567362" font-size="12">overengineeringd --live</text>
+    <text x="553" y="237" fill="#c8ffd8" font-size="12">2: encrypted-todos</text>
+    <text x="815" y="237" fill="#567362" font-size="12">vault unsealed</text>
+
+    <g clip-path="url(#leftLogClip)" font-size="10">
+      <g>
+        <g id="alert-lines">
+          <text x="44" y="112" fill="#6afc93">12:42:03 INFO  manual process: automate dog walk reminders</text>
+          <text x="44" y="128" fill="#f7d774">12:42:05 WARN  leoctl: no commits in 120m; wellness check dispatched</text>
+          <text x="44" y="144" fill="#8bdcff">12:42:08 TRACE spreadsheet opened; severity="emotional damage"</text>
+          <text x="44" y="160" fill="#ff77d9">12:42:11 IDEA  what if `rm` had undo and a tiny legal dept</text>
+          <text x="44" y="176" fill="#6afc93">12:42:14 INFO  santa-sensor-04: Roomba + festive lighting</text>
+          <text x="44" y="192" fill="#b9ffc8">12:42:18 OK    tabs-vs-spaces neutrality holding at 99.97 percent</text>
+          <text x="44" y="208" fill="#f7d774">12:42:23 WARN  meeting detected; should be PR comment</text>
+          <text x="44" y="224" fill="#8bdcff">12:42:31 STAT  yak stack depth: 5; task: rename variable</text>
+          <text x="44" y="240" fill="#ff77d9">12:42:37 IDEA  CLI to lint grocery lists for dependency confusion</text>
+          <text x="44" y="256" fill="#6afc93">12:42:44 INFO  automation saved 11s after 9h implementation</text>
+          <text x="44" y="272" fill="#f7d774">12:42:51 WARN  TODO says "temporary"; git blame reports 2022</text>
+          <text x="44" y="288" fill="#b9ffc8">12:43:02 OK    coffee recovered; abstraction budget still negative</text>
+          <text x="44" y="304" fill="#8bdcff">12:43:09 TRACE dashboards green; no decision changed</text>
+          <text x="44" y="320" fill="#ff77d9">12:43:13 IDEA  pre-commit hook: "does this need Kubernetes?"</text>
+          <text x="44" y="336" fill="#6afc93">12:43:21 INFO  calendar says "quick sync"; raising suspicion</text>
+          <text x="44" y="352" fill="#f7d774">12:43:28 WARN  framework risk: "this should be reusable"</text>
+          <text x="44" y="368" fill="#8bdcff">12:43:33 STAT  side quests accepted: 4; completed: 0</text>
+          <text x="44" y="384" fill="#b9ffc8">12:43:41 OK    prod fixed by slowly reading the error</text>
+        </g>
+        <use href="#alert-lines" transform="translate(0 288)"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -16;0 -32;0 -48;0 -64;0 -80;0 -96;0 -112;0 -128;0 -144;0 -160;0 -176;0 -192;0 -208;0 -224;0 -240;0 -256;0 -272;0 -288" keyTimes="0;0.056;0.111;0.167;0.222;0.278;0.333;0.389;0.444;0.5;0.556;0.611;0.667;0.722;0.778;0.833;0.889;0.944;1" dur="75s" calcMode="discrete" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <text x="43" y="359" fill="#38ff8e" font-size="11">$</text>
+    <rect x="56" y="351" width="8" height="12" fill="#38ff8e">
+      <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+
+    <g id="top-right-pane">
+      <text x="562" y="106" fill="#8cffae" font-size="12">Overengineering Load</text>
+      <text x="760" y="106" fill="#f7d774" font-size="12">73%<animate attributeName="opacity" values="1;0;0;0;0;0;1" keyTimes="0;0.167;0.333;0.5;0.667;0.833;1" dur="11s" calcMode="discrete" repeatCount="indefinite"/></text>
+      <text x="760" y="106" fill="#ff5f57" font-size="12" opacity="0">97%<animate attributeName="opacity" values="0;1;0;0;0;0;0" keyTimes="0;0.167;0.333;0.5;0.667;0.833;1" dur="11s" calcMode="discrete" repeatCount="indefinite"/></text>
+      <text x="760" y="106" fill="#f7d774" font-size="12" opacity="0">84%<animate attributeName="opacity" values="0;0;1;0;0;0;0" keyTimes="0;0.167;0.333;0.5;0.667;0.833;1" dur="11s" calcMode="discrete" repeatCount="indefinite"/></text>
+      <text x="760" y="106" fill="#ff5f57" font-size="12" opacity="0">99%<animate attributeName="opacity" values="0;0;0;1;0;0;0" keyTimes="0;0.167;0.333;0.5;0.667;0.833;1" dur="11s" calcMode="discrete" repeatCount="indefinite"/></text>
+      <text x="760" y="106" fill="#f7d774" font-size="12" opacity="0">78%<animate attributeName="opacity" values="0;0;0;0;1;0;0" keyTimes="0;0.167;0.333;0.5;0.667;0.833;1" dur="11s" calcMode="discrete" repeatCount="indefinite"/></text>
+      <text x="760" y="106" fill="#ff5f57" font-size="12" opacity="0">94%<animate attributeName="opacity" values="0;0;0;0;0;1;0" keyTimes="0;0.167;0.333;0.5;0.667;0.833;1" dur="11s" calcMode="discrete" repeatCount="indefinite"/></text>
+      <rect x="801" y="96" width="106" height="11" fill="#03120b" stroke="#155d37"/>
+      <rect x="802" y="97" width="62" height="9" fill="#38ff8e" filter="url(#greenGlow)">
+        <animate attributeName="width" values="62;84;72;98;67;92;62" keyTimes="0;0.167;0.333;0.5;0.667;0.833;1" dur="11s" calcMode="discrete" repeatCount="indefinite"/>
+      </rect>
+
+      <g opacity="0.5" stroke="#164d30" stroke-width="1">
+        <path d="M562 124 H906"/>
+        <path d="M562 141 H906"/>
+        <path d="M562 158 H906"/>
+        <path d="M562 175 H906"/>
+        <path d="M562 192 H906"/>
+        <path d="M586 124 V192"/>
+        <path d="M634 124 V192"/>
+        <path d="M682 124 V192"/>
+        <path d="M730 124 V192"/>
+        <path d="M778 124 V192"/>
+        <path d="M826 124 V192"/>
+        <path d="M874 124 V192"/>
+      </g>
+
+      <g clip-path="url(#graphClip)">
+        <g>
+          <polyline points="562,176 578,162 594,171 610,151 626,158 642,135 658,145 674,129 690,166 706,151 722,183 738,162 754,176 770,162 786,171 802,151 818,158 834,135 850,145 866,129 882,166 898,151 914,183 930,162 946,176 962,162 978,171 994,151 1010,158 1026,135 1042,145 1058,129 1074,166 1090,151 1106,183 1122,162 1138,176" fill="none" stroke="#ff5f57" stroke-width="2" stroke-linejoin="round" filter="url(#redGlow)"/>
+          <polyline points="562,185 578,182 594,181 610,178 626,176 642,179 658,171 674,174 690,168 706,172 722,169 738,165 754,185 770,182 786,181 802,178 818,176 834,179 850,171 866,174 882,168 898,172 914,169 930,165 946,185 962,182 978,181 994,178 1010,176 1026,179 1042,171 1058,174 1074,168 1090,172 1106,169 1122,165 1138,185" fill="none" stroke="#15c7ff" stroke-width="1.8" opacity="0.88"/>
+          <animateTransform attributeName="transform" type="translate" from="0 0" to="-192 0" dur="11s" repeatCount="indefinite"/>
+        </g>
+      </g>
+      <text x="562" y="204" fill="#567362" font-size="10">abstraction_debt: compounding</text>
+      <text x="799" y="204" fill="#567362" font-size="10">regret_index: high</text>
+    </g>
+
+    <g clip-path="url(#todoClip)" font-size="10">
+      <text x="562" y="264" fill="#a9ffbf">encrypted-todos v0.0.7:</text>
+      <text x="708" y="264" fill="#567362">open: 529 | wip: 17 | done: 2</text>
+      <text x="562" y="284" fill="#38ff8e">[ ] Automate laptop power-on before work</text>
+      <text x="562" y="300" fill="#f7d774">[ ] RFC: dog-walking bot RBAC</text>
+      <text x="562" y="316" fill="#8bdcff">[ ] Build `undo-rm` with backups and denial</text>
+      <text x="562" y="332" fill="#ff77d9">[x] Grafana panel for laundry velocity</text>
+      <text x="562" y="348" fill="#38ff8e">[~] Replace "quick script" with regret engine</text>
+      <g opacity="0.8">
+        <rect x="562" y="354" width="9" height="3" fill="#38ff8e">
+          <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+
+    <rect x="19" y="370" width="922" height="27" fill="#082015"/>
+    <rect x="31" y="375" width="128" height="17" fill="#38ff8e"/>
+    <text x="39" y="388" fill="#001b0a" font-size="12" font-weight="700">leo:bad-ideas</text>
+    <text x="170" y="388" fill="#c8ffd8" font-size="12">0:alerts</text>
+    <text x="240" y="388" fill="#72c98e" font-size="12">1:leoctl</text>
+    <text x="310" y="388" fill="#72c98e" font-size="12">2:encrypted-todos</text>
+    <text x="602" y="388" fill="#72c98e" font-size="12">uptime: 14:20</text>
+    <text x="703" y="388" fill="#8bdcff" font-size="12">|</text>
+    <text x="720" y="388" fill="#72c98e" font-size="12">bad ideas since last boot:</text>
+    <text x="913" y="388" fill="#ff5f57" font-size="12">57</text>
+  </g>
+</svg>
