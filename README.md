@@ -49,5 +49,5 @@ _Strong opinions, not strongly held. I reserve the right to merge more informed 
 - Building community is harder than building software, but sometimes more rewarding
 - Consistent code is cleaner than "clean" code
 - If the workaround has users, it is a product now
-- Superstition is silly until someone says “it’s only a one-line fix”
+- Superstition is silly until someone says "it’s only a one-line fix"
 
