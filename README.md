@@ -15,7 +15,7 @@
 <p align="center">
   I build security programs, developer tooling, weird automation, <br />
   open source software, and increasingly elaborate systems designed to <br />
-  catch Santa. I'm deeply suspicious of manual processes, and mildly <br />
+  [catch Santa](https://sdcc.leoreading.dev/). I'm deeply suspicious of manual processes, and mildly <br />
   obsessed with elegant systems.
 </p>
 
