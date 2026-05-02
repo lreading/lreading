@@ -1,10 +1,10 @@
-# If found, return to terminal
+# If found, please return to terminal
 
 ### Hi
 
-I'm Leo.
+#### I'm Leo.
 
-I build security programs, developer tooling, weird automation, open source software, and increasingly elaborate systems designed to catch Santa.
+I like building things: security programs, developer tooling, weird automation, open source software, and increasingly elaborate systems designed to catch Santa.
 
 I’m deeply suspicious of manual processes, mildly obsessed with elegant systems, and ***one bad idea away from over-engineering something useful***.
 
@@ -22,9 +22,9 @@ I’m deeply suspicious of manual processes, mildly obsessed with elegant system
 
 _These are things I believe at the time of writing.  They are strong opinions, but hopefully not strongly held._
 
-- UX improves security outcomes
-- Building community is harder than building software, but sometimes more rewarding
-- It's ok to not take a stance on `tabs v spaces`
-- Consistent code is cleaner than "clean" code
 - Most manual processes are bugs with social acceptance
-- Over-engineering is fine if you're having fun and nobody gets hurt.
+- Over-engineering is fine if you're having fun and nobody gets hurt
+- It's ok to not take a stance on `tabs v spaces`
+- UX often improves security outcomes
+- Building community is harder than building software, but sometimes more rewarding
+- Consistent code is cleaner than "clean" code
